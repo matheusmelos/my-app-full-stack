@@ -1,0 +1,141 @@
+/* Formulário de cadastro */
+.title{
+  color:  #1d4a8b;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 18px;
+  border-radius: 10px;
+  background-color: #fffaf6;
+  width: 400px;
+  height: 100%;
+  margin-bottom: 20px;
+  position: fixed;
+  top: 0px; 
+  left: 0px; 
+  z-index: 1000; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+
+form button {
+  background: linear-gradient(135deg, #1d4a8b, #4a90e2);
+  color: #fffaf6 ;
+  padding: 10px;
+  height: 40px;
+  border: none;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  opacity: 0.8;
+}
+
+form input {
+  border-color: #1d4a8b;
+  border-radius: 30px;
+  height: 30px;
+  background-color: #fff;
+  font-size: 14px;
+  padding-left: 15px;
+  color: #1d4a8b;
+}
+
+
+
+/* Cards Students */
+
+.container {
+  display: flex;
+  flex-direction: column; 
+  padding-top: 20px;
+  margin-left: 450px;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+ 
+}
+
+h1 {
+  color: #1d4a8b;
+  font-size: 30px;
+  text-align: center;
+}
+
+h2 {
+  color: #1d4a8b;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+.card_media {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #1d4a8b, #4a90e2);
+  margin: 10px;
+  padding: 10px;
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card_media p {
+  color: #fff;
+  font-weight: bold;
+}
+
+.card_media span {
+  font-weight: normal;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #1d4a8b, #4a90e2);
+  margin: 10px;
+  padding: 10px;
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card p {
+  color: #fff;
+  font-weight: bold;
+}
+
+.card span {
+  font-weight: normal;
+}
+
+.card button {
+  background-color: transparent;
+  color: #fff;
+  padding: 10px;
+  height: 10px;
+  border: none;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.card button:hover {
+  opacity: 0.8;
+}
