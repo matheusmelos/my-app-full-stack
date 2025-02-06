@@ -203,7 +203,7 @@ function Home() {
             <div key={student.id} className="card">
               <div>
                 <p>Nome: <span>{student.name}</span></p>
-                <p>Notas: <span>{student.nota1} {student.nota2}{student.nota3} {student.nota4} {student.nota5} </span> </p>
+                <p>Notas: <span>{student.nota1} {student.nota2} {student.nota3} {student.nota4} {student.nota5} </span> </p>
                 <p>Média: <span>{((student.nota1 + student.nota2 + student.nota3 + student.nota4 + student.nota5) / 5)}</span></p>
                 <p>Frequência: <span>{student.frequencia}%</span></p>
               </div>
