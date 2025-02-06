@@ -36,7 +36,7 @@ Este projeto foi desenvolvido para oferecer ao professor Carlos uma ferramenta r
 - A frequência é registrada em percentual (0 a 100%).
 - Um aluno está em risco acadêmico se sua frequência for inferior a 75%.
 - A interface deve ser responsiva e acessível para diferentes dispositivos.
-
+- O professor tem a permissão de apagar e/ou editar um aluno.
 ## Decisões de Projeto
 - **Frontend:**
   - Desenvolvido utilizando React e Vite para proporcionar alto desempenho e modularização.
