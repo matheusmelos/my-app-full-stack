@@ -28,7 +28,7 @@ Este projeto foi desenvolvido para oferecer ao professor Carlos uma ferramenta r
    npm run dev
    ```
 6. **Acessar o sistema:**
-   - O sistema estará disponível em `http://localhost:3000`
+   - O sistema estará disponível em `http://localhost:5174/`
 
 ## Premissas Assumidas
 - O professor pode inserir e atualizar as notas e a frequência dos alunos de maneira ágil.
