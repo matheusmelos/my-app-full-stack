@@ -25,7 +25,7 @@ Este projeto foi desenvolvido para oferecer ao professor Carlos uma ferramenta r
    ```
 5. **Executar o frontend:**
    ```bash
-   npm start
+   npm run dev
    ```
 6. **Acessar o sistema:**
    - O sistema estará disponível em `http://localhost:3000`
