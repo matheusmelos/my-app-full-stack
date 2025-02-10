@@ -7,12 +7,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<StudentContext>();
+builder.WebHost.UseUrls("http://localhost:5000");
 
 // Adiciona configuração CORS para permitir requisições do frontend
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp",
-        policy => policy.WithOrigins("http://localhost:5174") // URL do frontend React
+        policy => policy.WithOrigins("http://localhost:3000") // URL do frontend React
                         .AllowAnyMethod()
                         .AllowAnyHeader());
 });

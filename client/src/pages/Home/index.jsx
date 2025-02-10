@@ -24,7 +24,7 @@ function Home() {
   // Função assíncrona para buscar os alunos da API
   async function getStudents() {
     try {
-      const response = await axios.get('http://localhost:5116/student');
+      const response = await axios.get('http://localhost:5000/student');
       setStudents(response.data); // Atualiza o estado com os alunos recebidos
     } catch (error) {
       console.error('Erro ao buscar os alunos:', error);
