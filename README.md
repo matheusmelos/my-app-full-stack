@@ -3,32 +3,80 @@
 ## Introdução
 Este projeto foi desenvolvido para oferecer ao professor Carlos uma ferramenta robusta e eficiente para a gestão acadêmica de seus alunos. O sistema permite o cadastro completo de alunos, a inserção e atualização dinâmica de notas e frequência, além do cálculo automatizado de médias e identificação de alunos que necessitam de atenção especial. Com uma interface intuitiva e moderna, o sistema proporciona uma experiência fluida e responsiva.
 
+## Requisitos
+- É necessário ter o **.NET 8** instalado no sistema.
+- É necessário ter o **Node.js** instalado no sistema.
+
+### Instalação do .NET 8
+
+#### No Linux:
+Execute os seguintes comandos para instalar o .NET 8 no Linux utilizando o gerenciador de pacotes da sua distribuição. Para Ubuntu/Debian:
+
+```bash
+sudo apt update
+sudo apt install dotnet-sdk-8.0
+```
+
+#### No Windows:
+Baixe o instalador oficial em: [https://dotnet.microsoft.com/en-us/download/dotnet/8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
+E siga as instruções de instalação.
+
+### Instalação do Node.js
+
+#### No Linux:
+```bash
+sudo apt update
+sudo apt install nodejs npm
+```
+Após a instalação, verifique se o Node.js foi adicionado ao PATH:
+```bash
+node -v
+npm -v
+```
+
+#### No Windows:
+Baixe o instalador oficial em: [https://nodejs.org/](https://nodejs.org/)
+Durante a instalação, marque a opção para adicionar o Node.js ao PATH.
+Após instalar, verifique a instalação executando no terminal:
+```powershell
+node -v
+npm -v
+```
+
 ## Instruções para Executar o Sistema
 1. **Clonar o repositório:**
    ```bash
    git clone https://github.com/matheusmelos/my-app-full-stack
    cd my-app-full-stack
    ```
-2. **Instalar as dependências do backend:**
+2. **Abrir o projeto no VS Code:**
+   - **No Linux:**
+     ```bash
+     code .
+     ```
+   - **No Windows:**
+     ```powershell
+     code .
+     ```
+
+3. **Instalar as dependências do backend:**
    ```bash
    cd server
    dotnet restore
    ```
-3. **Executar o backend:**
-   ```bash
-   dotnet run
-   ```
 4. **Instalar as dependências do frontend:**
    ```bash
-   cd client
+   cd ../client
    npm install
    ```
 5. **Executar o frontend:**
    ```bash
-   npm run dev
+   npm start
    ```
-6. **Acessar o sistema:**
-   - O sistema estará disponível em `http://localhost:5174/`
+
+### Importante:
+- O backend e o frontend devem estar rodando simultaneamente.
+- O sistema normalmente estará disponível em `http://localhost:3000/`.
 
 ## Premissas Assumidas
 - O professor pode inserir e atualizar as notas e a frequência dos alunos de maneira ágil.
@@ -37,6 +85,7 @@ Este projeto foi desenvolvido para oferecer ao professor Carlos uma ferramenta r
 - Um aluno está em risco acadêmico se sua frequência for inferior a 75%.
 - A interface deve ser responsiva e acessível para diferentes dispositivos.
 - O professor tem a permissão de apagar e/ou editar um aluno.
+
 ## Decisões de Projeto
 - **Frontend:**
   - Desenvolvido utilizando React e Vite para proporcionar alto desempenho e modularização.
