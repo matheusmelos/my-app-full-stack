@@ -56,7 +56,7 @@ function Home() {
     };
 
     try {
-      const response = await axios.post('http://localhost:5116/student', student);
+      const response = await axios.post('http://localhost:5000/student', student);
       setStudents((prevStudents) => [...prevStudents, response.data]); // Adiciona o novo aluno na lista
       setFormData({
         name: '',
@@ -76,7 +76,7 @@ function Home() {
   // Função para excluir um aluno
   async function deleteStudent(studentId) {
     try {
-      await axios.delete(`http://localhost:5116/student/${studentId}`);
+      await axios.delete(`http://localhost:5000/student/${studentId}`);
       setStudents(students.filter((student) => student.id !== studentId)); // Remove o aluno da lista
     } catch (error) {
       console.error('Erro ao excluir o aluno:', error);
